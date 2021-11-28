@@ -1,38 +1,9 @@
-import React, { useEffect } from "react";
 import "./index.css";
 
 // Navin, Kishore, Krishna
 
 const AuthForm = () => {
-    useEffect(() => {
-        $(document).ready(function(){
-            $('.login-info-box').fadeOut();
-            $('.login-show').addClass('show-log-panel');
-        });
 
-
-        $('.login-reg-panel input[type="radio"]').on('change', function() {
-            if($('#log-login-show').is(':checked')) {
-                $('.register-info-box').fadeOut(); 
-                $('.login-info-box').fadeIn();
-                
-                $('.white-panel').addClass('right-log');
-                $('.register-show').addClass('show-log-panel');
-                $('.login-show').removeClass('show-log-panel');
-                
-            }
-            else if($('#log-reg-show').is(':checked')) {
-                $('.register-info-box').fadeIn();
-                $('.login-info-box').fadeOut();
-                
-                $('.white-panel').removeClass('right-log');
-                
-                $('.login-show').addClass('show-log-panel');
-                $('.register-show').removeClass('show-log-panel');
-            }
-        });
-  
-    });
     return (
         <div class="login-reg-panel">
 			<div class="login-info-box">
@@ -71,6 +42,7 @@ const AuthForm = () => {
 					</form>
 				</div>
 			</div>
+            <script src="./script.js" />
 		</div>
     );
 }
