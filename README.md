@@ -2,14 +2,14 @@
 
 This is my first package.
 
-# Installation
+## Installation
 
-`npm install @navin3d/react-login --save`
+`npm install react-login-navin3d --save`
 
 Then...
 
 ```
-import AuthForm from "@navin3d/react-login";
+import AuthForm from "react-login-navin3d";
 
 <AuthForm />
 ```
